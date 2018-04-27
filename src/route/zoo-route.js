@@ -26,7 +26,7 @@ module.exports = function routeZoo(router) {
 
   router.get('/api/v1/zoo', (req, res) => {
     if (!req.url.query.id) {
-      response.sendText(res, 400, 'Your request requires an id.');
+      response.sendText(res, 400, 'Your request requires an id, bad request.');
       return undefined;
     }
 
